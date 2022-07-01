@@ -1,11 +1,16 @@
 ## EdgeNeXt: Efficiently Amalgamated CNN-Transformer Architecture for Mobile Vision Applications
 
+
+
 [Muhammad Maaz](https://scholar.google.com/citations?user=vTy9Te8AAAAJ&hl=en&authuser=1&oi=sra), [Abdelrahman Shaker](https://scholar.google.com/citations?hl=en&user=eEz4Wu4AAAAJ), [Hisham Cholakkal](https://scholar.google.com/citations?hl=en&user=bZ3YBRcAAAAJ), [Salman Khan](https://salman-h-khan.github.io/), [Syed Waqas Zamir](https://www.waqaszamir.com/), [Rao Muhammad Anwer](https://scholar.google.com/citations?hl=en&authuser=1&user=_KlvMVoAAAAJ), and [Fahad Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en)
 
 
-Paper: https://arxiv.org/abs/2206.10589
 
-Code: https://github.com/mmaaz60/EdgeNeXt
+<p align="center">
+
+[Paper](https://arxiv.org/abs/2206.10589): [<img height="10" src="C:\Users\rekah\Documents\Amshaker.github.io\EdgeNeXt\Paper.PNG" width="15" height="15"/>](https://arxiv.org/abs/2206.10589)  , [Code:](https://github.com/mmaaz60/EdgeNeXt) [<img height="10" src="C:\Users\rekah\Documents\Amshaker.github.io\EdgeNeXt\img_1.png" width="15" height="15"/>](https://github.com/mmaaz60/EdgeNeXt)
+</p>
+
 ### Abstract
 ![main figure](images/EdgeNext.png)
 
