@@ -1,0 +1,45 @@
+# - title: "About"
+#   href: "/about/"
+
+
+#- title: "Research"
+#  href: "/research/"
+
+#- title: "Survey on Semantic Parsing"
+#  href: "/survey/"
+
+
+#- title: "Projects"
+#  href: "/projects/"
+#  subcategories:
+#    - subtitle: "Domain adaptation for sentiment analysis"
+#      subhref: "/projects/Dom_ad/"
+#     - subtitle: "Visual Question Answering"
+#       subhref: "/projects/vqa/"
+#    - subtitle: "Structured Prediction"
+#      subhref: "/projects/SPEN/"
+#    - subtitle: "Multitask learning for biomedical NER"
+#      subhref: "/projects/bioner/"
+#    - subtitle: "Survey on Semantic Parsing"
+#      subhref: "/projects/survey/"
+
+#- title: "Resources"
+#  href: "/resources/"
+#  subcategories:
+#    - subtitle: "Item 1"
+#      subhref: "/resources/item-1/"
+#    - subtitle: "Item 2"
+#      subhref: "/resources/item-2/"
+      
+
+#- title: "Research Notebook"
+  #href: "/notebook"
+
+#- title: "CV"
+#  href: "/cv/"
+
+#- title: "Blog"
+#  href: "/blog/"
+
+# - title: "Photography"
+#   href: "/photos/"
