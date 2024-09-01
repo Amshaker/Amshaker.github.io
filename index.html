@@ -77,7 +77,7 @@ layout: default
         <tbody>
         <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2> <strong> Research </strong> </h2>
+                <h2> <strong> Selected Publications </strong> </h2>
             </td>
         </tr>
         </tbody>
@@ -127,6 +127,54 @@ layout: default
                 <a href="https://github.com/Amshaker/MAVOS">Code</a>
                 <p></p>
                 <p> We propose an efficient transformer-based approach, named MAVOS, that introduces an optimized and dynamic long-term modulated cross-attention (MCA) memory to model temporal smoothness without requiring frequent memory expansion. The proposed MCA effectively encodes both local and global features at various levels of granularity while efficiently maintaining consistent speed regardless of the video length. Extensive experiments on multiple benchmarks, LVOS, Long-Time Video, and DAVIS 2017, demonstrate the effectiveness of our proposed contributions leading to real-time inference and markedly reduced memory demands without any degradation in segmentation accuracy on long videos. Compared to the best existing transformer-based approach, our MAVOS increases the speed by 7.6X, while significantly reducing the GPU memory by 87% with comparable segmentation performance on short and long video datasets. </p>
+            </td>
+        </tr>    
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+
+         <tbody>
+            
+        <tr>
+            <td style="padding:20px;width:50%;vertical-align:middle">
+                <div class="one">
+                    <img src='images/UNETR++.jpg' width="500">
+                </div>
+            </td>
+            <td style="padding:20px;width:50%;vertical-align:middle">
+                <a href="https://amshaker.github.io/unetr_plus_plus/">
+                    <font color="black"><strong>UNETR++: Delving into Efficient and Accurate 3D Medical Image Segmentation [IEEE TMI-2024] (Journal IF: 10.6)</strong></font>
+                </a>
+                <br>
+               <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker*&Dagger;</a></strong>,
+                <a href="https://amshaker.github.io/">
+                </a>
+             
+                <a href="https://mmaaz60.github.io/">
+                                Muhammad Maaz&Dagger;
+                            </a>
+                
+                <a href="https://www.hanoonarasheed.com/">
+                                Hanoona Rashed&dagger;
+                            </a>
+                 <a href="https://salman-h-khan.github.io/">
+                                Salman Khan&dagger;
+                            </a>
+                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">
+                                Ming-Hsuan Yang &dagger;
+                            </a>
+                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">
+                                Fahad Khan&dagger;
+                            </a>
+                
+                <br>
+                <a href="https://amshaker.github.io/unetr_plus_plus/">Project page</a>
+                /
+                <a href="https://ieeexplore.ieee.org/document/10526382">Paper</a>
+                /
+                <a href="https://github.com/Amshaker/unetr_plus_plus">Code</a>
+                <p></p>
+                <p> In this paper, we propose a 3D medical image segmentation approach, named UNETR++, that offers both high-quality segmentation masks as well as efficiency in terms of parameters and compute cost. The core of our design is the introduction of a novel efficient paired attention (EPA) block that efficiently learns spatial and channel-wise discriminative features using a pair of inter-dependent branches based on spatial and channel attention. Our spatial attention formulation is efficient having linear complexity with respect to the input sequence length. To enable communication between spatial and channel-focused branches, we share the weights of query and key mapping functions that provide a complimentary benefit (paired attention), while also reducing the overall network parameters. Our extensive evaluations on three benchmarks, Synapse, BTCV and ACDC, reveal the effectiveness of the proposed contributions in terms of both efficiency and accuracy. On Synapse dataset, our UNETR++ sets a new state-of-the-art with a Dice Similarity Score of 87.2%, while being significantly efficient with a reduction of over 71% in terms of both parameters and FLOPs, compared to the best existing method in the literature. </p>
             </td>
         </tr>    
 
@@ -246,54 +294,7 @@ layout: default
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
      
-        <tbody>
-            
-        <tr>
-            <td style="padding:20px;width:50%;vertical-align:middle">
-                <div class="one">
-                    <img src='images/UNETR++.jpg' width="500">
-                </div>
-            </td>
-            <td style="padding:20px;width:50%;vertical-align:middle">
-                <a href="https://amshaker.github.io/unetr_plus_plus/">
-                    <font color="black"><strong>UNETR++: Delving into Efficient and Accurate 3D Medical Image Segmentation [IEEE TMI-2024] (Journal IF: 10.6)</strong></font>
-                </a>
-                <br>
-               <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker*&Dagger;</a></strong>,
-                <a href="https://amshaker.github.io/">
-                </a>
-             
-                <a href="https://mmaaz60.github.io/">
-                                Muhammad Maaz&Dagger;
-                            </a>
-                
-                <a href="https://www.hanoonarasheed.com/">
-                                Hanoona Rashed&dagger;
-                            </a>
-                 <a href="https://salman-h-khan.github.io/">
-                                Salman Khan&dagger;
-                            </a>
-                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">
-                                Ming-Hsuan Yang &dagger;
-                            </a>
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">
-                                Fahad Khan&dagger;
-                            </a>
-                
-                <br>
-                <a href="https://amshaker.github.io/unetr_plus_plus/">Project page</a>
-                /
-                <a href="https://ieeexplore.ieee.org/document/10526382">Paper</a>
-                /
-                <a href="https://github.com/Amshaker/unetr_plus_plus">Code</a>
-                <p></p>
-                <p> In this paper, we propose a 3D medical image segmentation approach, named UNETR++, that offers both high-quality segmentation masks as well as efficiency in terms of parameters and compute cost. The core of our design is the introduction of a novel efficient paired attention (EPA) block that efficiently learns spatial and channel-wise discriminative features using a pair of inter-dependent branches based on spatial and channel attention. Our spatial attention formulation is efficient having linear complexity with respect to the input sequence length. To enable communication between spatial and channel-focused branches, we share the weights of query and key mapping functions that provide a complimentary benefit (paired attention), while also reducing the overall network parameters. Our extensive evaluations on three benchmarks, Synapse, BTCV and ACDC, reveal the effectiveness of the proposed contributions in terms of both efficiency and accuracy. On Synapse dataset, our UNETR++ sets a new state-of-the-art with a Dice Similarity Score of 87.2%, while being significantly efficient with a reduction of over 71% in terms of both parameters and FLOPs, compared to the best existing method in the literature. </p>
-            </td>
-        </tr>    
-
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-         
+               
      
        <tbody>
             
