@@ -84,6 +84,54 @@ layout: default
     </table>
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
+
+
+       <tbody>
+            
+        <tr>
+            <td style="padding:20px;width:50%;vertical-align:middle">
+                <div class="one">
+                    <img src='images/groupmamba' width="500">
+                </div>
+            </td>
+            <td style="padding:20px;width:50%;vertical-align:middle">
+                <a href="https://github.com/Amshaker/GroupMamba">
+                    <font color="black"><strong>GroupMamba: Efficient Group-Based Visual State Space Model [CVPR 2025]</strong></font>
+                </a>
+                <br>
+               
+             <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker*&Dagger;</a></strong>,
+                <a href="https://amshaker.github.io/">
+                </a>
+             
+                <a href="https://talalwasim.github.io//">
+                                Syed Talal&Dagger;
+                            </a>
+                         
+     
+               <a href="https://salman-h-khan.github.io/">
+                      Salman Khan&dagger;
+                  </a>
+                 
+                 <a href="https://scholar.google.de/citations?user=1CLaPMEAAAAJ&hl=de">
+                                Juergen Gall &dagger;
+                            </a>
+                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">
+                                Fahad Khan&dagger;
+                            </a>
+                
+                <br>
+                <a href="https://arxiv.org/abs/2407.13772">Paper</a>
+                /
+                <a href="https://github.com/Amshaker/GroupMamba">Code</a>
+                <p></p>
+                <p> State-space models (SSMs) have recently shown promise in capturing long-range dependencies with subquadratic computational complexity, making them attractive for various applications. However, purely SSM-based models face critical challenges related to stability and achieving state-of-the-art performance in computer vision tasks. Our paper addresses the challenges of scaling SSM-based models for computer vision, particularly the instability and inefficiency of large model sizes. We introduce a parameter-efficient modulated group mamba layer that divides the input channels into four groups and applies our proposed SSM-based efficient Visual Single Selective Scanning (VSSS) block independently to each group, with each VSSS block scanning in one of the four spatial directions. The Modulated Group Mamba layer also wraps the four VSSS blocks into a channel modulation operator to improve cross-channel communication. Furthermore, we introduce a distillation-based training objective to stabilize the training of large models, leading to consistent performance gains. Our comprehensive experiments demonstrate the merits of the proposed contributions, leading to superior performance over existing methods for image classification on ImageNet-1K, object detection, instance segmentation on MS-COCO, and semantic segmentation on ADE20K. Our tiny variant with 23M parameters achieves state-of-the-art performance with a classification top-1 accuracy of 83.3% on ImageNet-1K, while being 26% efficient in terms of parameters, compared to the best existing Mamba design of same model size.</p>
+            </td>
+        </tr>    
+
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+         
        <tbody>
             
         <tr>
