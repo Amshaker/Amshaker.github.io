@@ -1,29 +1,75 @@
 ---
 layout: default
 ---
- 
 
-<!--<div class="home">-->
+<!-- Navigation Bar -->
+<style>
+    .nav-bar {
+        width: 100%;
+        background-color: #f8f9fa;
+        border-bottom: 2px solid #dee2e6;
+        padding: 15px 0;
+        margin-bottom: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .nav-container {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .nav-link:hover {
+        background-color: #007bff;
+        color: white;
+    }
+    
+    .student-card {
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+    
+    .student-name {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+</style>
 
-<!--    <h2>About</h2>-->
-<!--    <p> I am a final-year Ph.D. Candidate at Mohamed Bin Zayed University, advised by Prof. Fahad Khan.-->
-<!--        I have a mixed experience between conducting pure academic research and contributing to international products in the industry. -->
-<!--        I have published over 10 research papers with more than 1000 citations and contributed to more than 5 international projects. My research interest is Computer Vision, especially designing 2D and 3D accurate, lightweight, and memory-efficient architectures for edge devices.
-<!--        My MSc degree in the areas of deep learning and-->
-<!--        signal processing, with a special focus on GANs in 1D ECG signals.</p>-->
-<!--    &lt;!&ndash; <p> I have also worked as a Machine Learning Engineer at Valeo Egypt and Teaching/Lecturer Assistant at the Faculty of Computer and Information Sciences, Ain Shams University.  </p>-->
-<!--     &ndash;&gt;-->
-<!--    <br>-->
-<!--
-<!--    <hr>-->
-<!--    <br>-->
-
-<!--</div>-->
+<div class="nav-bar">
+    <div class="nav-container">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#students" class="nav-link">Students</a>
+        <a href="#news" class="nav-link">News</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#service" class="nav-link">Academic Service</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+    </div>
+</div>
 
 <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <!-- About Section -->
+    <table id="about" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
         <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -33,16 +79,12 @@ layout: default
         </tbody>
     </table>
 
-
     <tr style="padding:0px">
         <td style="padding:0px">
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
                 <tr style="padding:0px">
                     <td style="padding:2.5%;width:63%;vertical-align:middle">
-                        <!--                        <p style="text-align:center">-->
-                        <!--                            <name>Abdelrahman Shaker</name>-->
-                        <!--                        </p>-->
                         <p>I am Computer Vision Researcher at the <a href="https://mbzuai-cv-lab.netlify.app//"> Computer Vision Department </a> at <a href="https://mbzuai.ac.ae/"> Mohamed Bin Zayed University of Artificial Intelligence </a> advised by <a
                                 href="https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=en"> Prof. Fahad Khan</a>, where I work on
                             designing accurate, fast, and memory-efficient computer vision architectures for edge devices.
@@ -71,9 +113,8 @@ layout: default
         </td>
     </tr>
 
-    
-
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <!-- Publications Section -->
+    <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
         <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -82,11 +123,9 @@ layout: default
         </tr>
         </tbody>
     </table>
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-
-
-       <tbody>
+    
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
 
        <tr>
     <td style="padding:20px;width:50%;vertical-align:middle">
@@ -155,24 +194,10 @@ layout: default
                 <br>
                
              <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://amshaker.github.io/">
-                </a>
-             
-                <a href="https://talalwasim.github.io//">
-                                Syed Talal,
-                            </a>
-                         
-     
-               <a href="https://salman-h-khan.github.io/">
-                      Salman Khan,
-                  </a>
-                 
-                 <a href="https://scholar.google.de/citations?user=1CLaPMEAAAAJ&hl=de">
-                                Juergen Gall,
-                            </a>
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">
-                                Fahad Khan.
-                            </a>
+                <a href="https://talalwasim.github.io//">Syed Talal</a>,
+               <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
+                 <a href="https://scholar.google.de/citations?user=1CLaPMEAAAAJ&hl=de">Juergen Gall</a>,
+                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
                 
                 <br>
                 <a href="https://arxiv.org/abs/2407.13772">Paper</a>
@@ -183,11 +208,6 @@ layout: default
             </td>
         </tr>    
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-         
-       <tbody>
-            
         <tr>
             <td style="padding:20px;width:50%;vertical-align:middle">
                 <div class="one">
@@ -201,27 +221,11 @@ layout: default
                 <br>
                
              <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://amshaker.github.io/">
-                </a>
-             
-                <a href="https://talalwasim.github.io//">
-                                Syed Talal,
-                            </a>
-                
-               <a href="https://martin-danelljan.github.io/">
-                                Martin Danelljan,
-                            </a>             
-     
-               <a href="https://salman-h-khan.github.io/">
-                      Salman Khan,
-                  </a>
-                 
-                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">
-                                Ming-Hsuan Yang,
-                            </a>
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">
-                                Fahad Khan.
-                            </a>
+                <a href="https://talalwasim.github.io//">Syed Talal</a>,
+               <a href="https://martin-danelljan.github.io/">Martin Danelljan</a>,             
+               <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
+                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Ming-Hsuan Yang</a>,
+                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
                 
                 <br>
                 <a href="https://arxiv.org/abs/2403.17937">Paper</a>
@@ -232,11 +236,6 @@ layout: default
             </td>
         </tr>    
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-
-         <tbody>
-            
         <tr>
             <td style="padding:20px;width:50%;vertical-align:middle">
                 <div class="one">
@@ -249,25 +248,11 @@ layout: default
                 </a>
                 <br>
                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://amshaker.github.io/">
-                </a>
-             
-                <a href="https://mmaaz60.github.io/">
-                                Muhammad Maaz,
-                            </a>
-                
-                <a href="https://www.hanoonarasheed.com/">
-                                Hanoona Rashed,
-                            </a>
-                 <a href="https://salman-h-khan.github.io/">
-                                Salman Khan,
-                            </a>
-                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">
-                                Ming-Hsuan Yang,
-                            </a>
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">
-                                Fahad Khan.
-                            </a>
+                <a href="https://mmaaz60.github.io/">Muhammad Maaz</a>,
+                <a href="https://www.hanoonarasheed.com/">Hanoona Rashed</a>,
+                 <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
+                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Ming-Hsuan Yang</a>,
+                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
                 
                 <br>
                 <a href="https://amshaker.github.io/unetr_plus_plus/">Project page</a>
@@ -280,11 +265,6 @@ layout: default
             </td>
         </tr>    
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-         
-      <tbody>
-            
         <tr>
             <td style="padding:20px;width:50%;vertical-align:middle">
                 <div class="one">
@@ -296,44 +276,16 @@ layout: default
                     <font color="black"><strong>GLaMM: Grounding Large Multimodal Model [CVPR 2024]</strong></font>
                 </a>
                 <br>
-               
-             
-                <a href="https://mmaaz60.github.io/">
-                                Muhammad Maaz,
-                            </a>
-                
-                <a href="https://www.hanoonarasheed.com/">
-                                Hanoona Rashed,
-                            </a>
-               <a href="https://www.linkedin.com/in/sahalshajim">
-                                Sahal Shaji,
-                            </a>
-             
+                <a href="https://mmaaz60.github.io/">Muhammad Maaz</a>,
+                <a href="https://www.hanoonarasheed.com/">Hanoona Rashed</a>,
+               <a href="https://www.linkedin.com/in/sahalshajim">Sahal Shaji</a>,
                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://amshaker.github.io/">
-                </a>
-                         <a href="https://salman-h-khan.github.io/">
-                                Salman Khan,
-                            </a>
-                 
-                 <a href="https://scholar.google.ae/citations?user=bZ3YBRcAAAAJ&hl=fr/">
-                                Hisham Cholakkal,
-                            </a>
-
-                <a href="https://scholar.google.fi/citations?user=_KlvMVoAAAAJ&hl=en">
-                                Rao Muhammad Anwer,
-                            </a>
-                <a href="https://www.cs.cmu.edu/~epxing/">
-                                Eric Xing,
-                            </a>
-    
-             
-                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">
-                                Ming-Hsuan Yang,
-                            </a>
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">
-                                Fahad Khan.
-                            </a>
+                         <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
+                 <a href="https://scholar.google.ae/citations?user=bZ3YBRcAAAAJ&hl=fr/">Hisham Cholakkal</a>,
+                <a href="https://scholar.google.fi/citations?user=_KlvMVoAAAAJ&hl=en">Rao Muhammad Anwer</a>,
+                <a href="https://www.cs.cmu.edu/~epxing/">Eric Xing</a>,
+                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Ming-Hsuan Yang</a>,
+                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
                 
                 <br>
                 <a href="https://mbzuai-oryx.github.io/groundingLMM/">Project page</a>
@@ -346,12 +298,6 @@ layout: default
             </td>
         </tr>    
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-         
-    
-       <tbody>
-            
         <tr>
             <td style="padding:20px;width:50%;vertical-align:middle">
                 <div class="one">
@@ -364,25 +310,11 @@ layout: default
                 </a>
                 <br>
                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://amshaker.github.io/">
-                </a>
-             
-                <a href="https://mmaaz60.github.io/">
-                                Muhammad Maaz,
-                            </a>
-                
-                <a href="https://www.hanoonarasheed.com/">
-                                Hanoona Rashed,
-                            </a>
-                 <a href="https://salman-h-khan.github.io/">
-                                Salman Khan,
-                            </a>
-                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">
-                                Ming-Hsuan Yang,
-                            </a>
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">
-                                Fahad Khan,
-                            </a>
+                <a href="https://mmaaz60.github.io/">Muhammad Maaz</a>,
+                <a href="https://www.hanoonarasheed.com/">Hanoona Rashed</a>,
+                 <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
+                 <a href="https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en">Ming-Hsuan Yang</a>,
+                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
                 
                 <br>
                 <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Shaker_SwiftFormer_Efficient_Additive_Attention_for_Transformer-based_Real-time_Mobile_Vision_Applications_ICCV_2023_paper.pdf">Paper</a>
@@ -393,13 +325,6 @@ layout: default
             </td>
         </tr>    
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-     
-               
-     
-       <tbody>
-            
         <tr>
             <td style="padding:20px;width:50%;vertical-align:middle">
                 <div class="one">
@@ -411,28 +336,14 @@ layout: default
                     <font color="black"><strong>EdgeNeXt: Efficiently Amalgamated CNN-Transformer Architecture for Mobile Vision Applications [ECCVW 2022]</strong></font>
                 </a>
                 <br>
-                <a href="https://scholar.google.com/citations?user=vTy9Te8AAAAJ&hl=en&authuser=1&oi=sra">
-                                Muhammad Maaz,
-                            </a>
-                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://amshaker.github.io/">
-                            </a>
-                (First author equal contribution)
-                <a href="https://scholar.google.com/citations?hl=en&user=bZ3YBRcAAAAJ">
-                                Hisham Cholakkal,
-                            </a>
-                 <a href="https://salman-h-khan.github.io/">
-                                Salman Khan,
-                            </a>
-                <a href="https://www.waqaszamir.com/">
-                                Syed Waqas Zamir,
-                            </a>
-                 <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=_KlvMVoAAAAJ">
-                                Rao Muhammad Anwer,
-                            </a>
-                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">
-                                Fahad Khan.
-                            </a>
+                <a href="https://scholar.google.com/citations?user=vTy9Te8AAAAJ&hl=en&authuser=1&oi=sra">Muhammad Maaz</a>,
+                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>
+                (First author equal contribution),
+                <a href="https://scholar.google.com/citations?hl=en&user=bZ3YBRcAAAAJ">Hisham Cholakkal</a>,
+                 <a href="https://salman-h-khan.github.io/">Salman Khan</a>,
+                <a href="https://www.waqaszamir.com/">Syed Waqas Zamir</a>,
+                 <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=_KlvMVoAAAAJ">Rao Muhammad Anwer</a>,
+                <a href="https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en/">Fahad Khan</a>
                 
                 <br>
                 <a href="https://amshaker.github.io/EdgeNeXt/">Project page</a>
@@ -445,9 +356,6 @@ layout: default
             </td>
         </tr>    
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-
         <tr>
             <td style="padding:20px;width:50%;vertical-align:middle">
                 <div class="one">
@@ -459,19 +367,11 @@ layout: default
                     <font color="black"><strong> INSTA-YOLO: Real-Time Instance Segmentation [ICMLW 2021]</strong></font>
                 </a>
                 <br>
-                <a href="https://scholar.google.com/citations?user=0OEerycAAAAJ&hl=en">
-                                Eslam Bakr,
-                            </a>
-                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker,</a></strong>,
-                <a href="https://amshaker.github.io/">
-                            </a>
-                (First author equal contribution)
-                <a href="https://scholar.google.com/citations?user=hiEbSZYAAAAJ&hl=en">
-                                Ahmed El-Sallab,
-                            </a>
-                 <a href="https://orcid.org/0000-0002-2215-5594">
-                                Mayada Hadhoud.
-                            </a>
+                <a href="https://scholar.google.com/citations?user=0OEerycAAAAJ&hl=en">Eslam Bakr</a>,
+                <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker,</a></strong>
+                (First author equal contribution),
+                <a href="https://scholar.google.com/citations?user=hiEbSZYAAAAJ&hl=en">Ahmed El-Sallab</a>,
+                 <a href="https://orcid.org/0000-0002-2215-5594">Mayada Hadhoud</a>
 
                 <br>
                 <a href="https://arxiv.org/abs/2102.06777">Paper</a>
@@ -479,9 +379,6 @@ layout: default
                 <p> We propose Insta-YOLO, a novel one-stage end-to-end deep learning model for real-time instance segmentation. Instead of pixel-wise prediction, our model predicts instances as object contours represented by 2D points in Cartesian space. We evaluate our model on three datasets, namely, Carvana,Cityscapes and Airbus. We compare our results to the state-of-the-art models for instance segmentation. The results show our model achieves competitive accuracy in terms of mAP at twice the speed on GTX-1080 GPU</p>
             </td>
         </tr>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
 
         <tr>
             <td style="padding:20px;width:50%;vertical-align:middle">
@@ -496,17 +393,9 @@ layout: default
                 <br>
 
                 <strong><a href="https://amshaker.github.io/">Abdelrahman Shaker</a></strong>,
-                <a href="https://amshaker.github.io/">
-                            </a>
-                <a href="https://scholar.google.com/citations?user=WEEZVTgAAAAJ&hl=en">
-                                Manal Tantawi,
-                            </a>
-                <a href="https://scholar.google.com/citations?user=xlM3esYAAAAJ&hl=en&oi=ao">
-                                Howida Shedeed,
-                            </a>
-                 <a href="https://scholar.google.com/citations?user=T0ct7pIAAAAJ&hl=en&oi=ao">
-                                Mohamed Tolba,
-                            </a>
+                <a href="https://scholar.google.com/citations?user=WEEZVTgAAAAJ&hl=en">Manal Tantawi</a>,
+                <a href="https://scholar.google.com/citations?user=xlM3esYAAAAJ&hl=en&oi=ao">Howida Shedeed</a>,
+                 <a href="https://scholar.google.com/citations?user=T0ct7pIAAAAJ&hl=en&oi=ao">Mohamed Tolba</a>
 
                 <br>
                 <a href="https://ieeexplore.ieee.org/document/9000871">Paper</a>
@@ -520,197 +409,180 @@ augmentation techniques. </p>
             </td>
         </tr>
 
-         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2> <strong> News </strong> </h2>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <ul>
-
-                     <li>
-                    GroupMamba has been accepted at CVPR 2025! [28/2/2025].
-                    </li>
-                   <li>
-                    UNETR++ has been the most popular article in IEEE Transactions on Medical Imaging for three consecutive months [12/2024, 1/2025, 2/2025].
-                    </li>
-                    <li>
-                     I have two papers (<a href="https://arxiv.org/abs/2403.17937">MAVOS</a> and <a href="https://arxiv.org/abs/2402.14818">PALO</a>) that have been accepted at WACV 2025 from the first round! (acceptance rate 12.1%) [30/8/2024].
-                    </li>
-                   <li>
-                     UNETR++ has been accepted at IEEE Transactions on Medical Imaging! [5/4/2024].
-                    </li>
-                     <li>  
-                     We're thrilled to share that GLaMM has been accepted to CVPR 2024![27/2/2024].
-                    </li>
-                    <li>
-                      I attended ICCV'23 in person & presented the SwiftFormer paper. [1/10/2023].
-                    </li>
-                    <li>
-                     SwiftFormer has been accepted at ICCV! [14/7/2023].
-                    </li>
-                    <li>
-                      I attended the European Conference on Computer Vision (ECCV 2022) virtually [28/10/2022].
-                    </li>
-                     <li>
-                      EdgeNeXt has been accepted at ECCV/CADL 2022 workshop as an oral paper[17/8/2022].
-                    </li>
-                    <li>
-                        I will be a Teaching Assistant in CV701 at MBZUAI for Fall 2022 [15/8/2022].
-                    </li>
-                </ul>
-            </tr>
-            </tbody>
-        </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2> <strong> Achievements </strong> </h2>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <ul>
-                    <li>
-                        PhD Research Achievement Award for Class of 2025 at MBZUAI, Computer Vision Department: Recognized for exceptional research performance and impactful contributions during the PhD program.
-                    </li>
-                     <li>
-                        Research Rockstar Award for Class of 2025 at MBZUAI, Computer Vision Department: Awarded for outstanding innovation, publication excellence, and leadership in research activities.
-                    </li>
-                    <li>
-                        Over two million downloads for <a href="https://huggingface.co/timm/edgenext_small.usi_in1k">EdgeNeXt</a> and <a href="https://huggingface.co/MBZUAI/swiftformer-xs">SwiftFormer</a> on HuggingFace.
-                    </li>
-                </ul>
-            </tr>
-            </tbody>
-        </table>
-<!--          
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2> <strong> Publications </strong> </h2>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <ul>
-                     <li>
-                        A Shaker, M Maaz, H Rashed, S Khan, MH Yang, F khan. SwiftFormer: Efficient Additive Attention for Transformer-based Real-time Mobile Vision Applications
-. Accepted at ICCV 2023. <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Shaker_SwiftFormer_Efficient_Additive_Attention_for_Transformer-based_Real-time_Mobile_Vision_Applications_ICCV_2023_paper.pdf">[Paper]</a> <a href="https://github.com/Amshaker/SwiftFormer"> [Code]</a>
-                    </li>
-                     <li>
-                        A Shaker, M Maaz, H Rashed, S Khan, MH Yang, F khan. UNETR++: Delving into Efficient and Accurate 3D Medical Image Segmentation
-. <a href="https://ieeexplore.ieee.org/document/10526382">[Paper]</a> <a href="https://github.com/Amshaker/unetr_plus_plus"> [Code]</a> <a href="https://amshaker.github.io/unetr_plus_plus/"> [Project]</a>
-                    </li>
-                    <li>
-                        M Maaz, A Shaker, H Cholakkal, S Khan, S Zamir, R Anwer, F khan. EdgeNeXt: Efficiently Amalgamated CNN-Transformer Architecture for Mobile Vision Applications
-. <a href="https://arxiv.org/abs/2102.06777">[Paper]</a> <a href="https://github.com/mmaaz60/EdgeNeXt"> [Code]</a> <a href="https://amshaker.github.io/EdgeNeXt/"> [Project]</a>
-                    </li>
-                    <li>
-                        E Mohamed, A Shaker, A El-Sallab, M Hadhoud. Insta-yolo: Real-time instance segmentation. ICML Workshop on AI for Autonomous Driving, 2021. <a href="https://arxiv.org/abs/2102.06777">[Paper]</a>
-                    </li>
-                    <li>
-                        A Shaker, M. Tantawi, H. A. Shedeed and M. F. Tolba, "Generalization of Convolutional Neural Networks for ECG Classification Using Generative Adversarial Networks,". IEEE Access, vol. 8, pp. 35592-35605, 2020. <a href="https://ieeexplore.ieee.org/document/9000871">[Paper]</a>
-                    </li>
-                    <li>
-                        A Shaker, M. Tantawi, H. A. Shedeed and M. F. Tolba, "Deep convolutional neural networks for ECG heartbeat classification using two-stage hierarchical method". The International Conference on Advanced Intelligent Systems and Informatics, 2020. <a href="https://link.springer.com/chapter/10.1007/978-3-030-58669-0_12">[Paper]</a>
-                    </li>
-                    <li>
-                        A Shaker, M. Tantawi, H. A. Shedeed and M. F. Tolba, "Combination of convolutional and recurrent neural networks for heartbeat classification". The International Conference on Artificial Intelligence and Computer Vision, 2020. <a href="https://link.springer.com/chapter/10.1007/978-3-030-44289-7_34">[Paper]</a>
-                    </li>
-                    <li>
-                        A Shaker, M. Tantawi, H. A. Shedeed and M. F. Tolba, "Heartbeat classification using 1D convolutional neural networks". International Conference on Advanced Intelligent Systems and Informatics, 2019. <a href="https://link.springer.com/chapter/10.1007/978-3-030-31129-2_46">[Paper]</a>
-                    </li>
-                </ul>
-            </tr>
-            </tbody>
-        </table> -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2> <strong> Academic Service </strong> </h2>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <ul>
-                    <li>
-                        Reviewer for Transformer-based related papers in CVPR-2025, WACV-2025, NeurIPS-2025, CVPR-2024, ECCV-2024.
-                    </li>
-                    <li>
-                        Reviewer for IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), IEEE Access, Neural Computing and Applications, Computers in Biology and Medicine.
-                    </li>
-                    <li>
-                        Teaching Assistant: CV701, CV703, AI701 at MBZUAI, UAE.
-                    </li>
-                </ul>
-            </tr>
-            </tbody>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2> <strong> Teaching </strong> </h2>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-            <tr>
-                <ul>
-                    <li>
-                        Teaching Assistant, <strong> CV701, CV703, AI701 </strong>at MBZUAI, 2022, 2023.
-                    </li>
-                    <li>
-                        Lecturer Assistant, <strong> Deep Learning and Computer Vision </strong>at Ain Shams University, 2021.
-                    </li>
-                    <li>
-                        Teaching Assistant, <strong> Neural Networks and Machine Learning </strong> at Ain Shams University, 2018, 2019, and 2020.
-                    </li>
-                </ul>
-            </tr>
-            </tbody>
-        </table>
-
-
         </tbody>
     </table>
 
-    
+    <!-- Students Section -->
+    <table id="students" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2> <strong> Students </strong> </h2>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+                <h3> <strong> PhD Students </strong> </h3>
+                <div class="student-card">
+                    <div class="student-name">[Student Name]</div>
+                    <div>[Research Topic/Area]</div>
+                    <div>[Year Started]</div>
+                </div>
+                <!-- Add more PhD students as needed -->
+                
+                <h3 style="margin-top:30px;"> <strong> MSc Students </strong> </h3>
+                <div class="student-card">
+                    <div class="student-name">[Student Name]</div>
+                    <div>[Research Topic/Area]</div>
+                    <div>[Year Started]</div>
+                </div>
+                <!-- Add more MSc students as needed -->
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
+    <!-- News Section -->
+    <table id="news" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2> <strong> News </strong> </h2>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <ul>
+                 <li>
+                GroupMamba has been accepted at CVPR 2025! [28/2/2025].
+                </li>
+               <li>
+                UNETR++ has been the most popular article in IEEE Transactions on Medical Imaging for three consecutive months [12/2024, 1/2025, 2/2025].
+                </li>
+                <li>
+                 I have two papers (<a href="https://arxiv.org/abs/2403.17937">MAVOS</a> and <a href="https://arxiv.org/abs/2402.14818">PALO</a>) that have been accepted at WACV 2025 from the first round! (acceptance rate 12.1%) [30/8/2024].
+                </li>
+               <li>
+                 UNETR++ has been accepted at IEEE Transactions on Medical Imaging! [5/4/2024].
+                </li>
+                 <li>  
+                 We're thrilled to share that GLaMM has been accepted to CVPR 2024![27/2/2024].
+                </li>
+                <li>
+                  I attended ICCV'23 in person & presented the SwiftFormer paper. [1/10/2023].
+                </li>
+                <li>
+                 SwiftFormer has been accepted at ICCV! [14/7/2023].
+                </li>
+                <li>
+                  I attended the European Conference on Computer Vision (ECCV 2022) virtually [28/10/2022].
+                </li>
+                 <li>
+                  EdgeNeXt has been accepted at ECCV/CADL 2022 workshop as an oral paper[17/8/2022].
+                </li>
+                <li>
+                    I will be a Teaching Assistant in CV701 at MBZUAI for Fall 2022 [15/8/2022].
+                </li>
+            </ul>
+        </tr>
+        </tbody>
+    </table>
 
+    <!-- Achievements Section -->
+    <table id="achievements" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2> <strong> Achievements </strong> </h2>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <ul>
+                <li>
+                    PhD Research Achievement Award for Class of 2025 at MBZUAI, Computer Vision Department: Recognized for exceptional research performance and impactful contributions during the PhD program.
+                </li>
+                 <li>
+                    Research Rockstar Award for Class of 2025 at MBZUAI, Computer Vision Department: Awarded for outstanding innovation, publication excellence, and leadership in research activities.
+                </li>
+                <li>
+                    Over two million downloads for <a href="https://huggingface.co/timm/edgenext_small.usi_in1k">EdgeNeXt</a> and <a href="https://huggingface.co/MBZUAI/swiftformer-xs">SwiftFormer</a> on HuggingFace.
+                </li>
+            </ul>
+        </tr>
+        </tbody>
+    </table>
 
+    <!-- Academic Service Section -->
+    <table id="service" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2> <strong> Academic Service </strong> </h2>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <ul>
+                <li>
+                    Reviewer for Transformer-based related papers in CVPR-2025, WACV-2025, NeurIPS-2025, CVPR-2024, ECCV-2024.
+                </li>
+                <li>
+                    Reviewer for IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), IEEE Access, Neural Computing and Applications, Computers in Biology and Medicine.
+                </li>
+                <li>
+                    Teaching Assistant: CV701, CV703, AI701 at MBZUAI, UAE.
+                </li>
+            </ul>
+        </tr>
+        </tbody>
+    </table>
 
+    <!-- Teaching Section -->
+    <table id="teaching" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2> <strong> Teaching </strong> </h2>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+        <tr>
+            <ul>
+                <li>
+                    Teaching Assistant, <strong> CV701, CV703, AI701 </strong>at MBZUAI, 2022, 2023.
+                </li>
+                <li>
+                    Lecturer Assistant, <strong> Deep Learning and Computer Vision </strong>at Ain Shams University, 2021.
+                </li>
+                <li>
+                    Teaching Assistant, <strong> Neural Networks and Machine Learning </strong> at Ain Shams University, 2018, 2019, and 2020.
+                </li>
+            </ul>
+        </tr>
+        </tbody>
+    </table>
 
+    </tbody>
+</table>
