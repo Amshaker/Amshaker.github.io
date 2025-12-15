@@ -26,13 +26,22 @@ layout: default
         text-decoration: underline !important;
     }
     
-    /* Make paper description column wider */
-    table tr td:nth-child(2) {
-        width: 70% !important;
+    /* Make paper description column wider - only for publication tables */
+    #publications ~ table tr td:nth-child(2) {
+        width: 65% !important;
     }
     
-    table tr td:nth-child(1) {
-        width: 30% !important;
+    #publications ~ table tr td:nth-child(1) {
+        width: 35% !important;
+    }
+    
+    /* About section specific styling */
+    .about-table tr td:first-child {
+        width: 65% !important;
+    }
+    
+    .about-table tr td:last-child {
+        width: 35% !important;
     }
 </style>
 
@@ -52,10 +61,10 @@ layout: default
 
     <tr style="padding:0px">
         <td style="padding:0px">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <table class="about-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
                 <tr style="padding:0px">
-                    <td style="padding:2.5%;width:70%;vertical-align:middle">
+                    <td style="padding:2.5%;width:65%;vertical-align:middle">
                         <p>I am Computer Vision Researcher at the <a href="https://mbzuai-cv-lab.netlify.app//"> Computer Vision Department </a> at <a href="https://mbzuai.ac.ae/"> Mohamed Bin Zayed University of Artificial Intelligence </a> advised by <a
                                 href="https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=en"> Prof. Fahad Khan</a>, where I work on
                             designing accurate, fast, and memory-efficient computer vision architectures for edge devices.
@@ -74,8 +83,8 @@ layout: default
                             <a href="https://github.com/Amshaker">Github</a>
                         </p>
                     </td>
-                    <td style="padding:2.5%;width:30%;max-width:30%">
-                        <a href="/images/img_2.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
+                    <td style="padding:2.5%;width:35%;max-width:35%">
+                        <a href="/images/img_2.jpg"><img style="width:80%;max-width:400px;display:block;margin:0 auto;" alt="profile photo"
                                                             src="/images/img_2.jpg" class="hoverZoomLink"></a>
                     </td>
                 </tr>
