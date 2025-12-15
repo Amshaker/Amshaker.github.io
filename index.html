@@ -2,17 +2,35 @@
 layout: default
 ---
 
-<!-- Navigation Bar -->
+<!-- Header and Navigation -->
 <style>
-    .nav-bar {
+    .header-section {
         width: 100%;
-        background-color: #f8f9fa;
-        border-bottom: 2px solid #dee2e6;
-        padding: 15px 0;
+        background-color: #8B0000;
+        color: white;
+        padding: 20px 0 10px 0;
         margin-bottom: 30px;
         position: sticky;
         top: 0;
         z-index: 1000;
+    }
+    
+    .header-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .site-title {
+        font-size: 2em;
+        font-weight: 300;
+        margin: 0 0 15px 20px;
+    }
+    
+    .nav-bar {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 10px 0;
     }
     
     .nav-container {
@@ -20,21 +38,22 @@ layout: default
         margin: 0 auto;
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 25px;
         flex-wrap: wrap;
     }
     
     .nav-link {
         text-decoration: none;
         color: #333;
-        font-weight: 500;
-        padding: 8px 16px;
+        font-weight: 400;
+        padding: 6px 12px;
         border-radius: 4px;
         transition: background-color 0.3s, color 0.3s;
+        font-size: 0.95em;
     }
     
     .nav-link:hover {
-        background-color: #007bff;
+        background-color: #8B0000;
         color: white;
     }
     
@@ -53,15 +72,20 @@ layout: default
     }
 </style>
 
-<div class="nav-bar">
-    <div class="nav-container">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#publications" class="nav-link">Publications</a>
-        <a href="#students" class="nav-link">Students</a>
-        <a href="#news" class="nav-link">News</a>
-        <a href="#achievements" class="nav-link">Achievements</a>
-        <a href="#service" class="nav-link">Academic Service</a>
-        <a href="#teaching" class="nav-link">Teaching</a>
+<div class="header-section">
+    <div class="header-container">
+        <h1 class="site-title">Abdelrahman Shaker</h1>
+    </div>
+    <div class="nav-bar">
+        <div class="nav-container">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#students" class="nav-link">Students</a>
+            <a href="#news" class="nav-link">News</a>
+            <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#service" class="nav-link">Academic Service</a>
+            <a href="#teaching" class="nav-link">Teaching</a>
+        </div>
     </div>
 </div>
 
