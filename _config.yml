@@ -14,6 +14,8 @@ permalink: pretty
 navigation:
   - title: About
     url: "#about"
+  - title: Experience
+    url: "#experience"
   - title: Publications
     url: "#publications"
   - title: News
