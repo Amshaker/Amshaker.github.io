@@ -28,16 +28,17 @@
         }
         
         .header-container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 40px;
+            gap: 20px;
+            padding: 0 24px;
         }
         
         .site-title {
-            font-size: 1.8em;
+            font-size: 1.6em;
             font-weight: 300;
             margin: 0;
             white-space: nowrap;
@@ -45,8 +46,9 @@
         
         .nav-container {
             display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
+            gap: 2px;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
             align-items: center;
         }
         
@@ -54,10 +56,10 @@
             text-decoration: none;
             color: white;
             font-weight: 400;
-            padding: 8px 15px;
+            padding: 6px 9px;
             border-radius: 4px;
             transition: background-color 0.3s;
-            font-size: 0.95em;
+            font-size: 0.9em;
             white-space: nowrap;
         }
         
@@ -65,7 +67,7 @@
             background-color: rgba(255, 255, 255, 0.2);
         }
         
-        @media (max-width: 768px) {
+        @media (max-width: 1080px) {
             .header-container {
                 flex-direction: column;
                 text-align: center;
@@ -74,6 +76,7 @@
             
             .nav-container {
                 justify-content: center;
+                flex-wrap: wrap;
             }
         }
         
